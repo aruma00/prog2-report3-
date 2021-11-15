@@ -28,19 +28,30 @@ public class Hero {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
-    public void setName(String name){
+    /** 
+     * 変数nameを参照
+    */
+        public void setName(String name){
         this.name = name;
     }
     
-
+    /** 
+     * 変数nameを参照
+     */
     public  String getName(){
         return this.name;
     }
 
+    /**
+     * 変数hitPointを参照
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
 
+    /**
+     * 変数deadを参照
+     */
     public boolean getDead(){
         return this.dead;
     }
