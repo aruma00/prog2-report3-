@@ -8,11 +8,11 @@ class WarriorTest {
 
     void attackTest(){
         int defaultattack = 100;
-        Warrior demosuperHero = new Warrior("戦士", 100, defaultattack);  
+        Warrior demoWarrior = new Warrior("戦士", 100, defaultattack);  
         Enemy slime = new Enemy("スライムもどき", 10, 100); 
         for(int i = 0; i < 3; i++){
           
-            demosuperHero.attackWithWeponSkill(slime);
+            demoWarrior.attackWithWeponSkill(slime);
             assertEquals(defaultattack*1.5, 150 );
         }
     }
