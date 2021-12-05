@@ -41,19 +41,18 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        while(hitPoint>0){
-      
+        
             int damage = (int)(Math.random() * attack);
-       
+            if(hitPoint >0){
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
             hero.wounded(damage);
-
-          
-        }
-       
+            }
+            else{
+                System.out.printf("死亡しているので攻撃不可");
+            }  
         
-        
-    }
+    }  
+    
 
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
