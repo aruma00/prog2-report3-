@@ -7,7 +7,7 @@ class WarriorTest {
     @Test
 
     void attackTest(){
-        int defaultattack = 100;
+        int defaultattack = 100;//固定
         Warrior demoWarrior = new Warrior("戦士", 100, defaultattack);  
         Enemy slime = new Enemy("スライムもどき", 10, 100); 
         for(int i = 0; i < 3; i++){
